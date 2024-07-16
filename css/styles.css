@@ -427,20 +427,22 @@ header {
     resize: none;
     width: 100%;
     padding: 8px 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.modal .form-field.textarea{
+.modal .form-field.textarea {
     margin-bottom: 16px;
 }
 
-.modal .form-field .underline{
-    color:var(--accent-color);
+.modal .form-field .underline {
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
-.modal .button.primary{
+.modal .button.primary {
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 
 }
 

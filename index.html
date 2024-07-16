@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Index</title>
+  <!-- icon in the browser tab -->
+  <link rel="icon" href="./images/astronaut_1.png" type="image/x-icon">
+  <!-- fonts styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
@@ -50,17 +53,68 @@
     <div class="overlay">
       <h1 class="overlay-title">Effective Solutions for Your Business</h1>
       <button class="button primary" type="button" data-open-modal>Order Service</button>
-      
+
     </div>
 
     <!-- Modal Window -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <p>Modal Window</p>
+
+        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
         <button class="modal-close" data-close-modal>
           <img src="./SVG/close-black.svg" alt="close block">
         </button>
+        <div class="modal-form">
+          <label class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="form-label">Name</span>
+            <span class="icon">
+              <svg class="svg">
+                <use href="./images/symbol-defs_form.svg#icon-person-black">
+                </use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            <input type="tel" class="form-input" name="tel" placeholder=" " />
+            <span class="form-label">Phone</span>
+            <span class="icon">
+              <svg class="svg">
+                <use href="./images/symbol-defs_form.svg#icon-phone-black">
+                </use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            <input type="email" class="form-input" name="mail" placeholder=" " />
+            <span class="form-label">Email</span>
+            <span class="icon">
+              <svg class="svg">
+                <use href="./images/symbol-defs_form.svg#icon-email-black">
+                </use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field textarea">
+            <textarea class="comment" name="comment" rows="10" placeholder="Text input"></textarea>
+            <span class="form-label">Comment</span>
+          </label>
+
+          <label class="form-field">
+            <input class="checkbox" type="checkbox" name="topic" value="html" />
+            <span class="icon"></span>
+            <span class="label">I accept the terms and conditions of the
+              <span class="underline">Privacy Policy
+              </span>
+            </span>
+          </label>
+        </div>
+        <button class="button primary" type="submit">Send</button>
       </div>
+    </div>
     </div>
 
     <!-- Features 2-->
@@ -280,7 +334,7 @@
         </ul>
       </div>
     </section>
-    
+
     <!-- Customers -->
     <section class="section customers">
       <div class="container">
@@ -367,6 +421,7 @@
         </p>
 
       </div>
+
       <div class="social-links">
 
         <h3 class="media-title">Social media</h3>
@@ -403,8 +458,25 @@
 
       </div>
 
+      <div class="subscribe">
+        <label class="form-subscribe">
+          <input type="email" name="subscribe" placeholder=" E-mail" />
+          <span class="form-label">Subscribe</span>
+        </label>
+        <button class="button primary" type="submit">Subscribe
+          <span class="icon">
+            <svg class="svg">
+              <use href="./images/symbol-defs_form.svg#icon-send">
+              </use>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+
     </div>
   </footer>
+  
 </body>
 
 </html>
